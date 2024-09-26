@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     {% load static %}
+    {% load mathfilters %}
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -10,8 +11,11 @@
     <link rel="icon" href="{% static 'icon/favicon.ico' %}" type="image/x-icon">
     <!-- JQuery DataTable Css -->
     <link href="{% static 'plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css' %}" rel="stylesheet">
-
-    <!-- Google Fonts -->
+    <link href="{% static 'plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css' %}" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap DatePicker Css -->
+    <link href="{% static 'plugins/bootstrap-datepicker/css/bootstrap-datepicker.css' %}" rel="stylesheet" />
+{#     Google Fonts -->#}
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
@@ -43,6 +47,7 @@
 
     <!-- Bootstrap Core Js -->
     <script src="{% static 'plugins/bootstrap/js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/pages/ui/tooltips-popovers.js' %}"></script>
 
     <!-- Select Plugin Js -->
     <script src="{% static 'plugins/bootstrap-select/js/bootstrap-select.js' %}"></script>
@@ -83,7 +88,11 @@
 
     <!-- Dropzone Plugin Js -->
     <script src="{% static 'plugins/dropzone/dropzone.js' %}"></script>
+    <!-- Bootstrap Material Datetime Picker Plugin Js -->
+    <script src="{% static 'plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js' %}"></script>
 
+    <!-- Bootstrap Datepicker Plugin Js -->
+    <script src="{% static 'plugins/bootstrap-datepicker/js/bootstrap-datepicker.js' %}"></script>
     <!-- Jquery DataTable Plugin Js -->
     <script src="{% static 'plugins/jquery-datatable/jquery.dataTables.js' %}"></script>
     <script src="{% static 'plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js' %}"></script>
@@ -94,5 +103,6 @@
     <script src="{% static 'plugins/jquery-datatable/extensions/export/vfs_fonts.js' %}"></script>
     <script src="{% static 'plugins/jquery-datatable/extensions/export/buttons.html5.min.js' %}"></script>
     <script src="{% static 'plugins/jquery-datatable/extensions/export/buttons.print.min.js' %}"></script>
+    <script src="{% static 'js/pages/ui/tooltips-popovers.js' %}"></script>
 </body>
 </html>
